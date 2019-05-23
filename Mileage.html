@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Vehicle Mileage</title>
+
+	<script>
+		/*Defining Table:
+		* Input: Beginning mileage, ending mileage, and gallons of gas used.
+		* Processing: Compute mileage in miles per gallon.
+		* Output: Mileage in miles per gallon.
+		*/
+
+		function mileage() {
+			//Get user input for mileage and gallons.
+			var b.mileage = parseFloat(document.getElementID(b.input).value);
+			var f.mileage = parseFloat(document.getElementID(f.input).value);
+			var gallonsUsed = parseFloat(document.getElementID(g.input).value);
+
+			//Compute mileage.
+			var mileageDifference = f.mileage - b.mileage;
+			var mpg = mileageDifference / gallonsUsed;
+
+			//Display the mileage to the user.
+			document.getElementID("outputDiv"),innerHTML = mpg;
+		}
+
+	</script>
+</head>
+
+<body>
+	Enter beginning mileage: <input type="text" id="b.input"><br>
+	Enter ending mileage: <input type="text" id="f.input"><br>
+	Enter gallons of gasoline used: <input type="text" id="g.input"><br>
+
+	<button type="button" onclick="mileage()">Compute</button>
+
+	<div id="outputDiv"></div>
+</body>
+</html>

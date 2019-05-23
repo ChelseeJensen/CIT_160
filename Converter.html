@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Liquid Quarts To Liters</title>
+
+	<script>
+		/*Defining Table:
+		*Input: Volume in quarts
+		*Processing: Convert volume given in quarts to volume in liters
+		*Output: The volume in liters
+		*/
+
+		function ConvertQuarts() {
+			// Get the volume from the user.
+			var userQuarts = parseFloat(document.getElementID(quarts).value);
+			
+			// Convert quarts to liters.
+			var litersNow = userQuarts / 1.0567;
+
+			//Display volume in liters.
+			document.getElementID('outputDiv').innerHTML = litersNow;
+		}
+	</script>
+</head>
+
+<body>
+	Enter volume in quarts <input type="text" id="quarts"><br>
+	<button type="button" onclick="ConvertQuarts()">Quarts</button>
+
+	<div id='outputDiv'></div>
+</body>
+</html>
