@@ -13,19 +13,19 @@
 
 		function ConvertQuarts() {
 			// Get the volume from the user.
-			var userQuarts = parseFloat(document.getElementID(quarts).value);
+			var userQuarts = parseFloat(document.getElementbyID("quarts").value);
 			
 			// Convert quarts to liters.
-			var litersNow = userQuarts / 1.0567;
+			var litersNow = userQuarts * 0.946;
 
 			//Display volume in liters.
-			document.getElementID('outputDiv').innerHTML = litersNow;
+			document.getElementbyID("outputDiv").innerHTML = litersNow;
 		}
 	</script>
 </head>
 
 <body>
-	Enter volume in quarts <input type="text" id="quarts"><br>
+	Enter volume in quarts <input type="text" id="quarts" size="5"><br>
 	<button type="button" onclick="ConvertQuarts()">Quarts</button>
 
 	<div id='outputDiv'></div>
