@@ -13,16 +13,16 @@
 
 		function mileage() {
 			//Get user input for mileage and gallons.
-			var b.mileage = parseFloat(document.getElementID(b.input).value);
-			var f.mileage = parseFloat(document.getElementID(f.input).value);
-			var gallonsUsed = parseFloat(document.getElementID(g.input).value);
+			var b.mileage = parseFloat(document.getElementbyID("b.input").value);
+			var f.mileage = parseFloat(document.getElementbyID("f.input").value);
+			var gallonsUsed = parseFloat(document.getElementbyID("g.input").value);
 
 			//Compute mileage.
 			var mileageDifference = f.mileage - b.mileage;
 			var mpg = mileageDifference / gallonsUsed;
 
 			//Display the mileage to the user.
-			document.getElementID("outputDiv"),innerHTML = mpg;
+			document.getElementbyID("outputDiv"),innerHTML = mpg;
 		}
 
 	</script>
